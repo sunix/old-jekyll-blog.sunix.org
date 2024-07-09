@@ -21,7 +21,7 @@ Imagine you're leaving your job, and a colleague needs an important email from a
 When I first attempted to migrate my emails using IMAP with Thunderbird, I encountered several issues:
 - **Inefficiency**: The process was slow and could not detect duplicate emails.
 - **Crashes**: Thunderbird crashed frequently, and resuming the migration from the last point was not straightforward.
-- **Label Issues**: Gmail labels are seen as folders in IMAP, but folders are not tags. If an email had multiple Gmail tags, it appeared as multiple emails in different folders in IMAP.
+- **Label Issues**: Gmail labels are seen as folders in IMAP, but folders are not labels. If an email had multiple Gmail labels, it appeared as multiple emails in different folders in IMAP.
 
 ## The Solution: Using mnIMAPSync by Marc Nuri
 
