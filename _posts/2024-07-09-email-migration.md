@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Migrating Gmail from One Account to Another: A Comprehensive Guide
+title: Migrating Gmail from One Account to Another\: A Comprehensive Guide
 modified: 2024-07-09
 categories: [articles, Howto]
 tags: 
@@ -10,26 +10,24 @@ tags:
 comments: true
 ---
 
-### Migrating Gmail from One Account to Another: A Comprehensive Guide
-
 Migrating emails from one Gmail account to another can be a daunting task, especially when you need to ensure that no emails are lost, and all tags (labels) are accurately transferred. This guide will walk you through the process, highlighting the common challenges and the tools you can use to make the migration smoother.
 <!-- more -->
-#### Why Backup Your Gmail?
+## Why Backup Your Gmail?
 
 Imagine you're leaving your job, and a colleague needs an important email from a customer that you no longer have. Or perhaps you need to consolidate multiple email accounts for better management. Backing up and migrating your emails can prevent data loss and ensure continuity in communication.
 
-#### Challenges in Migrating Gmail Accounts
+## Challenges in Migrating Gmail Accounts
 
 When I first attempted to migrate my emails using IMAP with Thunderbird, I encountered several issues:
 - **Inefficiency**: The process was slow and could not detect duplicate emails.
 - **Crashes**: Thunderbird crashed frequently, and resuming the migration from the last point was not straightforward.
 - **Label Issues**: Gmail labels are seen as folders in IMAP, but folders are not tags. If an email had multiple Gmail tags, it appeared as multiple emails in different folders in IMAP.
 
-#### The Solution: Using mnIMAPSync by Marc Nuri
+## The Solution: Using mnIMAPSync by Marc Nuri
 
 After struggling with Thunderbird, I turned to a tool developed by my colleague, Marc Nuri: [mnIMAPSync](https://github.com/manusa/mnIMAPSync). This Java-based IMAP Server syncing tool proved to be much more efficient for the task.
 
-##### Steps to Migrate Gmail Accounts Using mnIMAPSync
+### Steps to Migrate Gmail Accounts Using mnIMAPSync
 
 1. **Enable IMAP in Both Accounts**:
    - In both the source and destination Gmail accounts, go to `Settings` > `See all settings` > `Forwarding and POP/IMAP` and enable IMAP.
@@ -50,7 +48,7 @@ After struggling with Thunderbird, I turned to a tool developed by my colleague,
        --threads 9 --delete
      ```
 
-#### Troubleshooting Common Issues
+## Troubleshooting Common Issues
 
 - **Labels with Special Characters**:
   - If labels contain special characters (e.g., `/`), the tool might crash. Rename these labels without special characters and rerun the sync.
@@ -61,7 +59,7 @@ After struggling with Thunderbird, I turned to a tool developed by my colleague,
 - **Tool Crashes**:
   - If the tool crashes at any point, simply rerun it. The tool is designed to pick up where it left off.
 
-#### Conclusion
+## Conclusion
 
 Migrating emails between Gmail accounts can be a complex task, but using the right tools and following a structured approach can significantly simplify the process. mnIMAPSync by Marc Nuri offers a reliable solution for syncing emails, overcoming many of the limitations faced with other methods.
 
