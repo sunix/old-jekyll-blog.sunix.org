@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Migrating Gmail from One Account to Another\: A Comprehensive Guide
+title: "Migrating Gmail from One Account to Another: A Comprehensive Guide"
 modified: 2024-07-09
 categories: [articles, Howto]
 tags: 
