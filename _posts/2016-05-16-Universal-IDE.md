@@ -12,61 +12,58 @@ comments: true
 contribute: https://blog.sunix.org/factory?url=https://github.com/sunix/blog.sunix.org/tree/gh-pages
 ---
 
-This year I am participating to the Google Summer of Code as a mentor for the Eclipse umbrella organisation. I have submitted few ideas about Eclipse Che and Eclipse Flux and some of them have been selected. As far as I’m concerned, I am going to mentor the subject “Pair Programming with Eclipse Che” which will consist in improving an existing prototype I have demo-ed in various developer conferences [Github pair programming che extension](https://github.com/sunix/che-plugin-flux-live-edit)
+This year, I am participating in Google Summer of Code as a mentor for the Eclipse umbrella organization. I've submitted a few ideas about Eclipse Che and Eclipse Flux, and some of them have been selected. I am mentoring the project "Pair Programming with Eclipse Che," which involves improving an existing prototype I demonstrated at various developer conferences. You can check out the [GitHub pair programming Che extension](https://github.com/sunix/che-plugin-flux-live-edit).
 
-Few days ago, my padawan Randika encountered issue to set up his Eclipse IDE on his latest Ubuntu. He had issues with GTK3 and weird performance problem. So I first suggested him to run Eclipse IDE inside a Docker container. It worked fine, but as we are not living in the same location, I couldn’t help him efficiently for advanced IDE configuration such as GWT super dev mode.
-I posted to our Gitter chat room “Let's try something fun” and we started launching Eclipse IDE inside an Eclipse Che Docker workspace and hosted by Codenvy beta.
-When I posted a screenshot of this few hours later, I’ve got a lot of interactions on Twitter from the community: “Say whaaat?”, “WTF? :)”, “got some more info ? :)“, “worth writing a blog post how to set this up?”
+A few days ago, my padawan Randika encountered issues setting up his Eclipse IDE on the latest Ubuntu. He faced problems with GTK3 and experienced strange performance issues. I suggested he run the Eclipse IDE inside a Docker container, which worked fine. However, since we are not in the same location, it was difficult to assist him with advanced IDE configurations like GWT super dev mode.
+
+I posted in our Gitter chat room, "Let's try something fun," and we decided to launch Eclipse IDE inside an Eclipse Che Docker workspace hosted by Codenvy beta. When I posted a screenshot of this a few hours later, I received a lot of interactions on Twitter from the community: “Say whaaat?”, “WTF? :)”, “Got some more info? :)“, and “Worth writing a blog post on how to set this up?”
 
 <!-- more -->
 
-## Eclipse Mars running inside Eclipse Che
-So here this is how Randika ended up in writing a blog post explaning how we did this: [Run Eclipse Mars IDE inside Che](http://www.rnavagamuwa.com/open-source/run-eclipse-mars-ide-inside-eclipse-che/).
-There is nothing new, nothing revolutionary like Che ;) but thanks to this trick, I managed to help Randika setting up his GWT super dev mode in Eclipse Mars.
+## Eclipse Mars Running Inside Eclipse Che
 
+Randika ended up writing a blog post explaining how we did this: [Run Eclipse Mars IDE inside Che](http://www.rnavagamuwa.com/open-source/run-eclipse-mars-ide-inside-eclipse-che/). This trick helped me assist Randika in setting up his GWT super dev mode in Eclipse Mars, though it wasn't anything revolutionary like Che.
 
 ## Universal Eclipse IDE
-OK, so now what? You have probably seen Tyler’s keynote at EclipseCon 2016 talking about “Universal workspaces” [Eclipsecon keynote](http://www.infoq.com/presentations/eclipse-che-eclipsecon-2016) . I’d like to share my thoughts about building a Universal Eclipse IDE.
 
-In Randika’s demo, although “ssh -X” worked fine on our Iocal computer I had a bit of latency when it was running in the Cloud.
-On another side, Che is missing a lot of features and I don’t see how it can fill the gap compared to the classic Eclipse Desktop IDE.
-At last, when you install and Eclipse IDE plugin, it asks you to restart …. But what ? I thought it was running on OSGi and that was one of its key features? I heard someone saying that the problem was coming from SWT and that we should replace it with JAVA FX. I believe we should use web technologie, because it’s the future!!! ... sorry the present!!!!
+So, what's next? You might have seen Tyler’s keynote at EclipseCon 2016 about “Universal Workspaces” [EclipseCon keynote](http://www.infoq.com/presentations/eclipse-che-eclipsecon-2016). Here are my thoughts on building a Universal Eclipse IDE.
 
-So ... I have a dream ... that one day each single Eclipse plugin would have its services exposed in REST and/or WebSocket.
+In Randika’s demo, although "ssh -X" worked fine on our local computer, I experienced some latency when it ran in the Cloud. On the other hand, Che lacks many features and can't yet fill the gap compared to the classic Eclipse Desktop IDE. Additionally, when you install an Eclipse IDE plugin, it prompts you to restart. But why? Isn't it running on OSGi, one of its key features? I've heard someone say the problem lies with SWT and that it should be replaced with JavaFX. I believe we should use web technologies because they are the present and the future.
 
-I have a dream that one day Eclipse developers could write plugins that works either for Che or classic Eclipse IDE.
+So, I have a dream: that one day, every single Eclipse plugin will have its services exposed in REST and/or WebSocket.
 
-I have a dream today!
+I have a dream that Eclipse developers can write plugins that work for both Che and the classic Eclipse IDE.
 
-I have a dream that one day Che developers won’t reinvent the wheel and reuse Eclipse IDE core OSGi bundles.
+I have a dream that Che developers won't reinvent the wheel but will reuse Eclipse IDE core OSGi bundles.
 
-I have a dream that one day we won’t have to restart our IDE after a plugin installation.
+I have a dream that we won't have to restart our IDE after installing a plugin.
 
-I have a dream, today, that one day we would all use a Universal Eclipse IDE.
+I have a dream that one day we will all use a Universal Eclipse IDE.
 
-## Yes we can!
-In my opinion, this isn’t that hard:
+## Yes, We Can!
 
-Eclipse core bundle could expose Rest API or Websocket. We would just need to have an additional "org.eclipse.bundle.web" next to the "org.eclipse.bundle.ui" and both would use "org.eclipse.bundle.core" bundle. Eclipse would be running with a jetty http server bundle.
+In my opinion, this isn’t that hard to achieve:
 
-- We would run that headless Eclipse IDE inside a Che docker based workspace as we did previously but with X forwarding.
-- Eclipse Che cloud IDE client extension and Orion would connect to this Eclipse web services.
-- Or we could think about improving Eclipse Flux that started to make something similar.
+- The Eclipse core bundle could expose a REST API or WebSocket. We would need an additional "org.eclipse.bundle.web" alongside the "org.eclipse.bundle.ui," both using the "org.eclipse.bundle.core" bundle. Eclipse would run with a Jetty HTTP server bundle.
+- We would run a headless Eclipse IDE inside a Che Docker-based workspace with X forwarding.
+- Eclipse Che cloud IDE client extension and Orion could connect to these Eclipse web services.
+- Alternatively, we could improve Eclipse Flux, which started something similar.
 
-Everyone would get benefits from it:
+Everyone would benefit from this:
 
-- Che would reuse existing bundles of Eclipse IDE.
-- Che could get plugins from the existing Eclipse Marketplace.
-- For Eclipse Desktop IDE, it would be time to rethink design and decouple the UI from core services.
-- Javascript works everywhere. No need to maintain all the SWT graphical libraries binding for each target architectures.
-- We would be free of using any UI library, we could even mix them: SWT for navigation, GWT for view content, pure Orion javascript for the editor and Angular JS for the marketplace :)
+- Che could reuse existing bundles of the Eclipse IDE.
+- Che could access plugins from the existing Eclipse Marketplace.
+- For the Eclipse Desktop IDE, it would be time to rethink the design and decouple the UI from core services.
+- JavaScript works everywhere, eliminating the need to maintain SWT graphical libraries for each target architecture.
+- We could use any UI library and even mix them: SWT for navigation, GWT for view content, pure Orion JavaScript for the editor, and AngularJS for the marketplace.
 
 ## Recap
+
 To me, the Eclipse Universal IDE would be:
 
-- Eclipse Che with a docker-based workspace
+- Eclipse Che with a Docker-based workspace
 - Eclipse IDE running in the container
 - Eclipse IDE exposing web services
-- Eclipse Che Cloud IDE (the client side that runs in the browser) consuming services exposed by the Eclipse IDE and core services exposed by the Che server
+- Eclipse Che Cloud IDE (the client side running in the browser) consuming services exposed by the Eclipse IDE and core services exposed by the Che server
 
 Eclipse Flux could be an option for the communication layer.
