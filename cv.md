@@ -96,6 +96,26 @@ sunix@sunix.org
 - **Thales Communication (Colombes, France) (2004)**: Developed military software in C++.
 - **Netpepper (Paris, France) (2003)**: Developed a web application for sharing bookmarks and files using Java and .NET.
 
+## Community Involvement
+### ParisJUG Crew Member (2015 - Present)
+#### JUG Leader (2019 - 2023)
+- **ParisJUG**: The Paris Java User Group (ParisJUG) is a community for Java enthusiasts in Paris, hosting regular meetups, talks, and events to share knowledge and foster collaboration among developers.
+- **Role as JUG Leader**:
+  - Organized and coordinated monthly meetups, bringing together Java experts to share insights and best practices.
+  - Curated content for events, ensuring a diverse range of topics and high-quality presentations.
+  - Fostered community engagement through social media and networking events.
+  - Managed logistics for events, including venue selection, speaker coordination, and attendee registration.
+  - Enhanced the group's visibility and membership through strategic partnerships and outreach.
+  - Maintained the group’s website and other communication channels, ensuring timely updates and information dissemination.
+
+### Devoxx France Volunteer (2018 - 2019)
+- **Role**: Assisted in the organization of Devoxx France as part of the "gilets rouges" team.
+- **Contributions**:
+  - Supported event logistics, including registration, session coordination, and attendee assistance.
+  - Helped set up and manage the venue, ensuring a smooth experience for speakers and participants.
+  - Provided on-site support during the event, resolving issues and facilitating communication between organizers and attendees.
+
+
 ## Education
 - **Master in Engineering - Computer Science and Networks** (2001 - 2004) - Université de Marne-la-Vallée
 - **Diplôme Universitaire de Technologie in Computer Science** (1999 - 2001) - Université Paris 8
