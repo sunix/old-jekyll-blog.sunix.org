@@ -1,20 +1,20 @@
 ### Site info:
 title: "{ blog.sunix.org }"
-tagline: "Java Eclipse Che Codenvy Nuxeo Linux Cloud"
+tagline: "Java Cloud"
 author: Sun Seng David TAN (a.k.a Sunix)
 email: sunix@sunix.org
-description: "Sunix's blog site about Java, Eclipse, software development and FOSS"
-keywords: "sunix. Java. Eclipse. Che. Codenvy. Nuxeo"
+description: "Sunix's personal blog site about Java, Cloud, and Open Source Software Development."
+keywords: "sunix. Java. Cloud. Software Development. FOSS. Open Source. Eclipse JKube. Fabric8 Kubernetes Java Client. Eclipse Che. Eclipse Theia. ParisJUG. Devoxx France. Java Community. Java Champion. JavaOne. Oracle Code One. EclipseCon. EclipseCon Europe"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://blog.sunix.org" # the base hostname & protocol for your site
 locale: en_US
 
 ### Personal info and site tools info:
-twitter_username: sunsengdavidtan
+twitter_username: __sunix_
 github_username:  sunix
 disqus_shortname: sunix
 favicon:     "/images/favicon.ico"
-aboutme: Hi there, I'm Sun Seng David TAN (a.k.a. Sunix), a Java software developer working for Serli. I'm a Codenvy/Eclipse Che commiter. As a developer and a team leader, I'm working on the SaaS developer environment Codenvy. I've previously worked as a Java developer for Nuxeo, the Enterprise Content Management framework.
+aboutme: I am an experienced software engineer and tech lead with over 15 years of expertise in developing, maintaining, and enhancing Java applications and cloud-native solutions. I have a proven track record of contributing to open-source projects like Eclipse JKube, Fabric8 Kubernetes Java Client, Eclipse Che, and Eclipse Theia. As a passionate advocate for the Java community, I have been an active member of the ParisJUG crew since 2015, serving as JUG Leader from 2019 to 2023. Additionally, I have supported Devoxx France as part of the "gilets rouges" team. My technical skills span across various programming languages, frameworks, and cloud technologies, and I am dedicated to continuous learning and sharing knowledge through conferences and community involvement.
 aboutme_photo: https://secure.gravatar.com/avatar/b1f5e51435209676f03b1332e7fcf405?&s=200 # your photo.
 
 
