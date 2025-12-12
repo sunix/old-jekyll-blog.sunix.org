@@ -21,7 +21,7 @@ In his spare time, Sun brews his own beer in his kitchen, combining his passion 
 
 ### Français
 
-Sun est un ingénieur logiciel et tech lead expérimenté avec plus de 15 ans d'expertise dans le développement d'applications Java et de solutions cloud-native. Anciennement chez Red Hat, il a contribué à des projets open-source majeurs tels que Eclipse JKube, Fabric8 Kubernetes Java Client, Eclipse Che et Eclipse Theia. Actif dans la communauté Java, Sun fait partie de l'équipe ParisJUG depuis 2015 et a occupé le poste de JUG Leader de 2019 à 2023. Il a également soutenu Devoxx France en tant que membre de l'équipe des "gilets rouges", jouant un rôle clé dans l'organisation de l'un des plus grands événements développeurs en Europe.
+Sun est un ingénieur logiciel et tech lead expérimenté avec plus de 15 ans d'expertise dans le développement d'applications Java et de solutions cloud-native. Anciennement chez Red Hat, il a contribué à des projets open-source majeurs tels que Eclipse JKube, Fabric8 Kubernetes Java Client, Eclipse Che et Eclipse Theia. Actif dans la communauté Java, Sun fait partie de l'équipe ParisJUG depuis 2015 et a occupé le rôle de JUG Leader de 2019 à 2023.
 
 En 2024, Sun rejoint Sciam en tant que consultant tech lead, apportant son expertise dans l'accompagnement des entreprises vers des solutions innovantes et performantes. Passionné par l'apprentissage continu et le partage de connaissances, Sun intervient régulièrement lors de conférences et reste impliqué dans de nombreux projets open-source.
 
