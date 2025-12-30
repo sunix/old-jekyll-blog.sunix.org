@@ -16,6 +16,43 @@ sunix@sunix.org
 
 ## Experience
 
+### Senior Software Engineer / Platform Engineering Consultant at Sciam (2024 - 2025)
+
+#### FDJ United (Oct 2024 – Apr 2025)
+**Role**: Squad Lead – DevOps / Platform Engineering (Centre de compétences Platform Engineering)
+
+- **Context**: Takeover and industrialization of an existing draft for providing JFrog Artifactory as a managed platform service, replacing Nexus.
+- **Key Contributions**:
+  - Led a DevOps squad responsible for making the Artifactory platform **production-ready**.
+  - Redesigned the platform to align with **current enterprise standards** and security requirements.
+  - Implemented **fully automated deployments** using:
+    - Terraform
+    - Kubernetes
+    - AWS
+  - Integrated **IGA (Identity Governance & Administration)** and fine-grained access rights management.
+  - Defined operational standards (availability, security, scalability, observability).
+  - Collaborated closely with platform, security, and governance teams.
+- **Technologies Used**: Kubernetes, AWS, Terraform, JFrog Artifactory, GitOps, IAM / IGA, CI/CD.
+
+#### FLOA (Apr 2025 – Aug 2025)
+**Role**: Platform Engineering / Cloud Native Consultant
+
+- **Context**: Support for the migration of the Core Banking System towards an internally developed solution.
+- **Key Contributions**:
+  - Conducted a **technical and organizational diagnostic**:
+    - Identified pain points through interviews with multiple teams (Dev, Ops, Architecture).
+  - Defined **target Kubernetes architecture** and development environments.
+  - Built a **PoC development environment**:
+    - Minikube
+    - Helm
+    - End-to-end testing with Playwright
+  - Delivered **architecture and tooling recommendations** to support:
+    - Developer experience
+    - Scalability
+    - Reliability
+  - Promoted **Shift-Left practices** (testing, automation, developer ownership).
+- **Technologies Used**: Kubernetes, Helm, Minikube, Playwright, Cloud Native Architecture, DevEx, CI/CD.
+
 ### Senior Software Engineer at Red Hat (2022 - 2024)
 #### Eclipse JKube Project
 - **Project Description**: Facilitated the integration of Java applications with Kubernetes and OpenShift. Extended traditional Java build tools like Maven and Gradle for cloud-native deployments.
@@ -116,6 +153,108 @@ sunix@sunix.org
   - Provided on-site support during the event, resolving issues and facilitating communication between organizers and attendees.
 
 
+## Conferences & Talks
+
+### Keynote
+- **Devoxx Belgium 2024 – Keynote**
+  - *Devoxx Genie*  
+  - Devoxx Genie is an IntelliJ plugin for AI-powered development.  
+    Demo of ongoing work to port it to Visual Studio Code.
+
+### Java, Cloud IDE & Developer Experience (2014 – 2021)
+- **JavaOne**
+  - Pair Programming with Eclipse Cloud Development Top Projects
+- **EclipseCon (Europe, France, North America)**
+  - Introduction to Eclipse Che
+  - Live Pair Programming in the Cloud with Eclipse Che
+  - Simplified Open Source Contributions with Eclipse Che
+  - Coding Kubernetes for Kids with Scratch and Eclipse Che
+- **Devoxx France**
+  - Développement Java avec un IDE Cloud : YES WE CAN
+- **DevFest Nantes, SnowCamp, BreizhCamp**
+  - Cloud IDEs, pair programming & developer tooling
+- **JUG Summer Camp**
+  - Live editing, pair programming & open-source contribution workflows
+- **CheConf**
+  - The Path to Pair Programming in Eclipse Che
+  - Pair Programming with Che and Atom Teletype
+- **Oracle Code Paris**
+  - Eclipse Che & Cloud Development showcase
+
+### Java to Kubernetes for Dummies (2022 – 2024)
+
+Conference track delivered across major international conferences and JUGs,
+focused on demystifying Kubernetes for Java developers.
+
+- **Java2Days 2022**
+- **OpenSource XP 2022**
+- **DevNexus 2023 (USA)**
+- **DevFest Mons**
+- **Very Tech Trip**
+- **Nantes JUG, Alpes JUG**
+- **RivieraDev 2023**
+- **Devoxx France 2023**
+- **Devoxx Belgium 2023**
+
+Talks under this track:
+- *Java to Kubernetes for Dummies*
+- *Simplifiez le déploiement de vos applications Java sur Kubernetes avec JKube*
+- *Kubernetes, dépassionné et pour les ultra débutants*  
+  *(with Sébastien Blanc & Horacio Gonzalez)*
+
+### JKube, Kubernetes Tooling & Remote Development (2023 – 2025)
+- **RivieraDev 2023**
+  - JKube Remote Dev: Code with Your Cloud Services Locally
+- **Devoxx France 2023**
+  - JKube Remote Dev: Coder avec vos micro-services cloud… en local
+- **Devoxx Belgium 2023**
+  - Debugging in the Cloud, Mastered Locally with JKube Remote Dev
+- **RivieraJUG, MarsJUG, Poitou JUG**
+  - Advanced Java & Kubernetes workflows with JKube
+- **JavaLand**
+  - Kubernetes CRDs in Action with Java
+
+### Kubernetes Beyond Go & Platform Engineering (2024 – 2025)
+- **KubeCon India 2024**
+  - Developing Kubernetes Applications Beyond Go
+- **RivieraDev 2025**
+  - Developing Kubernetes Applications Beyond Go  
+  - Focus on Java, JVM ecosystems and Kubernetes APIs
+
+### Soft Skills & Non-Technical Talks
+- **Sunny Tech 2022**
+  - Le voyage du héros de l'IT 2 : Storytelling pour vos conférences
+- **RivieraDev 2023**
+  - Je brasse ma bière dans ma cuisine
+
+
+## Publications, Podcasts & Media
+
+### Magazine Articles
+
+- **Programmez! – Hors-série Special Red Hat Developer Edition**
+  - *CodeReady Workspaces*  
+  - Magazine article introducing cloud-based developer workspaces and Kubernetes-native
+    development environments.  
+  - https://www.programmez.com/magazine/programmez-hors-serie-5-pdf
+
+- **Programmez! – Magazine #248**
+  - *Y'a pas d'IDE plus simple que VS Code pour débuter en Java*  
+  - Magazine article focused on getting started with Java using Visual Studio Code,
+    emphasizing simplicity and modern developer tooling.  
+  - https://www.programmez.com/magazine/programmez-248-pdf
+
+### Podcasts
+
+- **Les Cast Codeurs – Episode 241**
+  - Interview on Cloud IDEs, Kubernetes and Developer Experience.
+
+- **Sons Of IT – Episode 27 (2023)**
+  - *Java, JKube et Quarkus : l'interview de Sun Tan*  
+  - Discussion on Java cloud-native development, Kubernetes tooling with JKube,
+    and modern Java frameworks such as Quarkus.
+
+
 ## Education
 - **Master in Engineering - Computer Science and Networks** (2001 - 2004) - Université de Marne-la-Vallée
 - **Diplôme Universitaire de Technologie in Computer Science** (1999 - 2001) - Université Paris 8
@@ -127,10 +266,13 @@ sunix@sunix.org
 - **Software Development**: Java, TypeScript, C++, GoLang, .NET
 - **Frameworks & Platforms**: Quarkus, Eclipse RCP, Nuxeo, Spring, Struts
 - **Web Development**: ReactJS, AngularJS, JavaScript, HTML, CSS
-- **Testing Tools**: Selenium Webdriver
+- **Testing Tools**: Selenium Webdriver, Playwright
 - **Containers & Cloud**: Docker, Kubernetes, OpenShift
 - **CI/CD Tools**: Jenkins, GitHub Actions
 - **Cloud Platforms**: AWS, Google Cloud, OpenShift
+- **Infrastructure as Code**: Terraform
+- **Package & Artifact Management**: JFrog Artifactory, Helm, Minikube
 - **Version Control & Configuration Management**: Git, SVN, Apache Maven, Gradle
+- **Security & Identity Management**: IAM, IGA (Identity Governance & Administration)
 - **Collaboration**: Agile methodologies, Scrum Master, Kanban, team management
 - **Development Environments & Tools**: Eclipse, Visual Studio Code
